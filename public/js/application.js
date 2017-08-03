@@ -18,12 +18,14 @@ $(document).ready(function() {
   	}).done(function(response){
   		console.log(response);
   		console.log("Hey, you did the thing")
+      
+
   		// $button.after(response);
   		$button.remove();
   	})
   })
 
-  $(".")
+  // $("")
 
 
 

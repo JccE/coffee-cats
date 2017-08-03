@@ -1,5 +1,6 @@
 get '/' do 
- erb :'/home'
+ redirect '/users'
 end
+
 
 
