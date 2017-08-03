@@ -1,0 +1,28 @@
+h1 {
+	color: white;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+.floating-box {
+	background-color: white;
+	float: left;
+	width:30%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	margin: 10px;
+	border: 3px solid #73AD21;  
+
+	-webkit-box-shadow: 9px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    9px 4px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         9px 4px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+body {
+	background-image: url("../redcat-logo-2.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 30%;
+	margin-right: 200px;
+	background-attachment: fixed;
+}
