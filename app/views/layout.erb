@@ -23,7 +23,7 @@
   <% if logged_in? %>
   <nav  style="padding-top: -1;max-width: 960px;">
     <ul>
-      <li><a class="active" href="/home">Coffee Cats</a></li> |
+      <li><a class="active" href="/users">Coffee Cats</a></li> |
       <li><a href="#contact">Log Out</a></li> |
       <li><a href="#about">Analytics</a></li>
       <li><a href="/users/<%=current_user.id%>"> <%= current_user.username %> </a></li>
@@ -36,14 +36,14 @@
 </nav>
 
 <div class="slogan">
-      <p>Kittens</p>
+      <p>Coffee Cats...</p>
     </div>
 
     <% else %>
       <nav style="padding-top: -1;">
 
     <ul>
-      <li><a class="active" href="/home">StackUnderflow</a></li>
+      <li><a class="active" href="/home">Coffee Cats</a></li>
       <li><a href="/sessions/new">Login</a></li>
       <li><a href="/users/new">Register</a></li>
       <li><a href="/">Home</a></li>

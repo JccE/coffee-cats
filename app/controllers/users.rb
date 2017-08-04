@@ -6,7 +6,7 @@ end
 get '/users/new' do 
 	@user = User.all
 	if request.xhr?
-		erb :"/", layout: false
+		erb :"/home", layout: false
 	else
 		erb :"/users/new"
 	end
@@ -16,7 +16,7 @@ post '/users' do
   @user = User.new(params[:user])
   if @user.save
     session[:user_id] = @user.id
-    redirect "/"
+    redirect "/home"
   else
     @errors = @user.errors.full_messages
     erb :'users/new'

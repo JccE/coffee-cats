@@ -1,5 +1,5 @@
 h1 {
-	color: white;
+	color: ;
 	font-family: 'Gloria Hallelujah', cursive;
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 body {
-	background-image: url("../redcat-logo-2.png");
+	background-image: url("../pusheen.gif");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: 30%;
