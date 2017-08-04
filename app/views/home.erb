@@ -1,4 +1,4 @@
-<h1 id="main_header">Good Morning<%= @user.name%></h1>
+<h1 id="main_header">Good Morning<%= @user.username%></h1>
 <h1> Have you had your coffee?</h1>
 
 <div class="floating-box">
@@ -6,8 +6,10 @@
 		<ul>Are they awake?</ul>
 		<ul>How many meows so far?</ul>
 		<ul>Release the treats!</ul>
+		<form action=""></form>
 		<button id="treat-call" type="button" >Treats!</button>
 		<!-- onclick="alert('Treats have been released!')" -->
 	</li>
+  <p style="text-align: center;" class="copyright"><%= Time.now.strftime("%B %-d  %Y, %l:%M%P") %></p>
 		
 </div>
