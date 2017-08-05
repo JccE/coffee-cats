@@ -15,6 +15,11 @@ gem 'rake'
 gem 'shotgun', '~>0.9.1'
 
 gem 'bcrypt'
+# gem 'watson-api-client'
+gem 'dotenv'
+gem 'excon'
+
+
 
 group :test do
   gem 'shoulda-matchers'

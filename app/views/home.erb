@@ -6,10 +6,35 @@
 		<ul>Are they awake?</ul>
 		<ul>How many meows so far?</ul>
 		<ul>Release the treats!</ul>
-		<form action=""></form>
-		<button id="treat-call" type="button" >Treats!</button>
-		<!-- onclick="alert('Treats have been released!')" -->
+		<form method="post" action="/events">
+  		<input id="treat-call" type="submit" value="capture" >Treats!</input>
+    </form>
 	</li>
+
+  <div id=event_container>
+    <% if @meow %>
+    <div class="meow">
+      <span class="meow">
+        <%= @meow.count %>
+      </span>
+    </div>
+  </div>
   <p style="text-align: center;" class="copyright"><%= Time.now.strftime("%B %-d  %Y, %l:%M%P") %></p>
 		
 </div>
+
+<div class=" ">
+  <div class="add_comments"></div>
+
+
+    <p class="add_comment_button"> <a href="/"> Visual Recognition Capture</a></p>
+
+    <form class="add_comment_form floating-box" action="/users" method="post" style="display: none;" >
+      <input type="text" name="users" style="width: 300px;" >
+      <br>
+      <h3>Analytics</h3>
+      <input class='post_comment_button' type="submit" value="capture">
+    </form>
+<!--   </div> -->
+
+  </div>

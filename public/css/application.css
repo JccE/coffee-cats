@@ -19,7 +19,7 @@ h1 {
 }
 
 body {
-	background-image: url("../pusheen.gif");
+	background-image: url("../redcat-logo-2.png");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: 30%;
@@ -35,4 +35,12 @@ ul {
 
 li {
     display: inline;
+}
+
+.add_comment_button {
+	float: left;
+	    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
 }
