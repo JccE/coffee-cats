@@ -1,20 +1,37 @@
 $(document).ready(function() {
 
+
+
   $('#treat-call').on("click", function(e){
   	e.preventDefault();
   	console.log("ready for action!")
 
   	var $button = $(this);
-
-  	$.ajax({
-  		url: $button.attr("action"),
-  		method: $button.attr("method")
-  	}).done(function(response){
-  		console.log(response);
-  		console.log("Hey, you did the thing")
-  		// $button.after(response);
-  		$button.remove();
-  	})
+    // var meows = $("input[name=meows]").val()
+    var method = $(this).attr("method")
+    var url = $(this).attr("action")
+    var data = $(this).serialize();
+    
+    var request = $.ajax({
+      method: method,
+      url: url,
+      data: data
+    })
+    request.done(function(response){
+      $("event_container").html(response);
+      console.log("Hey, you did the thing")
+      // $button.after(response);
+      $button.remove();
+    })
+  	// $.ajax({
+  	// 	url: $button.attr("action"),
+  	// 	method: $button.attr("method")
+  	// }).done(function(response){
+  	// 	console.log(response);
+  	// 	console.log("Hey, you did the thing")
+  	// 	// $button.after(response);
+  	// 	$button.remove();
+  	// })
   })
 
   $(".add_comment_button").on("click", function(event){

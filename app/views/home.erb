@@ -11,13 +11,9 @@
     </form>
 	</li>
 
-  <div id=event_container>
-    <% if @meow %>
-    <div class="meow">
-      <span class="meow">
-        <%= @meow.count %>
-      </span>
-    </div>
+  <div id="event_container">
+  <%= erb :_meow_count =>
+  
   </div>
   <p style="text-align: center;" class="copyright"><%= Time.now.strftime("%B %-d  %Y, %l:%M%P") %></p>
 		

@@ -15,6 +15,7 @@ end
 post '/users' do
   @user = User.new(params[:user])
   if @user.save
+    # save the user in :user_id
     session[:user_id] = @user.id
     redirect "/users/#{@user.id}"
   else
